@@ -1,17 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
     <title>My Site</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Tags -->
+    <meta name="title" content="Lam's Portfolio" />
+    <meta name="description" content="Hi, I'm Lam Nguyen, a fullstack web developer." />
+    <meta name="keywords" content="portfolio, web developer, fullstack, Lam Nguyen" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Lam Nguyen Dac Quang" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
 </head>
 
 <body>
-    <div class="flex flex-row justify-center items-center p-12">
-        <h1 class="text-5xl text-green-300 animate-bounce">Hello, Tailwind CSS</h1>
-    </div>
+    <!-- Banner -->
+    <section
+        class="min-h-screen w-full flex flex-col justify-center items-center bg-[url(https://raw.githubusercontent.com/nghuuquyen/nghuuquyen.github.io/refs/heads/main/public/banner.avif)] bg-cover bg-center">
+        <div class="w-full p-12 text-gray-800 lg:w-[80%]">
+            <h1 class="grid-col-1 mb-10 grid text-6xl font-bold lg:gap-5">
+                <span class="banner-text">Hi, my name is <span class="text-teal-400">Lam Nguyen Dac Quang</span></span>
+                <span class="text-gray-800 banner-text">I'm the Web Developer.</span>
+            </h1>
+            <a href="#about-me"
+                class="banner-cta cursor-pointer border-2 border-teal-400 p-3 uppercase transition-colors hover:bg-teal-400 hover:text-white">
+                <span
+                    class="pt-3 pr-8 pb-3 pl-8 text-xl font-light focus:ring focus:ring-teal-300 focus:outline-none">Know
+                    more</span>
+            </a>
+        </div>
+    </section>
+    <!-- Banner -->
+    <!-- About me -->
+    <section id="about-me"
+        class="flex min-h-screen w-full flex-col items-center justify-center bg-teal-400 p-4 text-white lg:p-12 ">
+        <div class="mb-5 w-full lg:w-[60%]">
+            <h2 class="section-title mb-12 text-center text-2xl font-bold text-white uppercase lg:text-5xl">About me
+            </h2>
+            <div class="grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-3">
+                <div class="col-span-1 flex items-center justify-center text-center">
+                    <img class="max-w-xs object-cover lg:w-auto" src="" title="My avatar" alt="My avatar" />
+                </div>
+                <div class="col-span-1 flex items-center justify-center lg:col-span-2">
+                    <div class="p-0 text-center lg:p-8 lg:text-start">
+                        <p class="section-content mb-5 pb-3 text-lg font-light">I love programming, application
+                            development, and
+                            research software architecture. My career objective is to become a Senior Software Engineer
+                            who masters software architecture, design principles, and modern development technologies.
+                        </p>
+                        <a href="#" target="_blank"
+                            class="cursor-pointer border-2 border-white p-3 text-white uppercase transition-colors hover:bg-white hover:text-teal-400">
+                            <span
+                                class="pt-3 pr-8 pb-3 pl-8 text-xl font-normal focus:ring focus:ring-teal-300 focus:outline-none">View
+                                My CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- About me -->
+    <!-- contact -->
+    <section id="contact"
+        class="bg-white min-h-[500px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+        <div class="w-full lg:w-[60%] mb-5">
+            <h2 class="section-title uppercase text-2xl lg:text-5xl text-center font-bold mb-6">Contact</h2>
+            <p class="section-content flex flex-col justify-center items-center pt-5 pb-5 text-center">
+                <span class="text-2xl text-teal-500 mb-3">I LOOK FORWARD TO WORKING WITH YOU</span>
+                <span>I'm so happy that my skills might bring values to you. Let's connect for work</span>
+            </p>
+        </div>
+        <a href="mailto: lam.nguyen210202@vnuk.edu.vn?subject=Hi, Lam I want to connect with you for work !!!&body=Please describe your work or projects requirements"
+            class="border-2 border-teal-400 pl-8 pr-8 pt-3 pb-3 bg-teal-400 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer">
+            <span class="text-xl uppercase font-light focus:outline-none focus:ring focus:ring-teal-300">Send An Email
+                Now</span>
+        </a>
+    </section>
+    <!-- contact ./ -->
 
+    <!-- footer -->
+    <footer class="flex min-h-[300px] flex-row items-center justify-center bg-neutral-900 pt-12 pb-12">
+        <div class="flex w-[60%] flex-col items-center justify-center">
+            <ul class="flex flex-row">
+                <li class="cursor-pointer pr-4 pl-4 hover:-translate-y-2">
+                    <a href="https://twitter.com/nghuuquyen" target="_blank">
+                        <img class="w-10 grayscale hover:grayscale-0"
+                            src="https://raw.githubusercontent.com/nghuuquyen/nghuuquyen.github.io/c7fcef3b2249069cff5032e539624263f39fde3c/public/imgs/twitter.svg" />
+                    </a>
+                </li>
+                <li class="cursor-pointer pr-4 pl-4 hover:-translate-y-2">
+                    <a href="https://www.linkedin.com/in/nghuuquyen" target="_blank">
+                        <img class="w-10 grayscale hover:grayscale-0"
+                            src="https://raw.githubusercontent.com/nghuuquyen/nghuuquyen.github.io/c7fcef3b2249069cff5032e539624263f39fde3c/public/imgs/linkedin.svg" />
+                    </a>
+                </li>
+                <li class="cursor-pointer pr-4 pl-4 hover:-translate-y-2">
+                    <a href="https://github.com/lamndq" target="_blank">
+                        <img class="w-10 grayscale hover:grayscale-0"
+                            src="https://raw.githubusercontent.com/nghuuquyen/nghuuquyen.github.io/c7fcef3b2249069cff5032e539624263f39fde3c/public/imgs/github.svg" />
+                    </a>
+                </li>
+            </ul>
+
+            <hr class="mt-10 w-1/2 border-gray-500" />
+            <p class="mt-5 text-lg text-gray-500">@2025 - Lam Nguyen Dac Quang</p>
+        </div>
+    </footer>
+    <!-- footer ./ -->
 
     <script type="module" src="/src/scripts/application.js"></script>
 </body>
