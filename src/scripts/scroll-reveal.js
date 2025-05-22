@@ -33,11 +33,10 @@ export default function initScrollReveal(defaultProps = null) {
             },
         },
     ];
-
+    
     ScrollReveal({ reset: false });
-
+    
     targetElements.forEach(({ element, animation }) => {
         ScrollReveal().reveal(element, Object.assign({}, defaultProps, animation));
     });
 }
-
